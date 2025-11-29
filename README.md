@@ -8,8 +8,9 @@ A production-ready Next.js 16 starter template with vanilla Leaflet integration.
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Template](https://img.shields.io/badge/Template-Use%20this%20template-brightgreen?logo=github)](https://github.com/wellywahyudi/nextjs-leaflet-starter/generate)
 
-![Demo Screenshot](public/vimal-s-GBg3jyGS-Ug-unsplash.jpg)
+![Demo Screenshot](screenshot.png)
 
 ## ✨ Features
 
@@ -37,8 +38,8 @@ A production-ready Next.js 16 starter template with vanilla Leaflet integration.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/nextjs-leaflet.git
-cd nextjs-leaflet
+git clone https://github.com/wellywahyudi/nextjs-leaflet-starter.git
+cd nextjs-leaflet-starter
 
 # Install dependencies
 npm install
@@ -119,6 +120,30 @@ npm run build    # Build for production
 npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
+
+## 🚢 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wellywahyudi/nextjs-leaflet-starter)
+
+### Manual Deployment
+
+1. Install Vercel CLI:
+
+```bash
+npm i -g vercel
+```
+
+2. Deploy:
+
+```bash
+vercel
+```
+
+3. Follow the prompts to link your project
+
+### Environment Variables
+
+No environment variables required for basic deployment. The app uses public GeoJSON data from the `/public/data` directory.
 
 ## 🤝 Contributing
 

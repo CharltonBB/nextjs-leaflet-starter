@@ -82,9 +82,16 @@ export function MapTopBar() {
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <User className="mr-2 h-4 w-4" />
-              <span>Github</span>
+            <DropdownMenuItem asChild>
+              <a
+                href="https://github.com/wellywahyudi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center cursor-pointer"
+              >
+                <User className="mr-2 h-4 w-4" />
+                <span>GitHub</span>
+              </a>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Settings className="mr-2 h-4 w-4" />

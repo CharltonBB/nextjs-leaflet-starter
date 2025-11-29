@@ -34,7 +34,7 @@ export function NavigationButtons() {
 
       {/* GitHub button */}
       <a
-        href="https://github.com/yourusername/nextjs-leaflet-starter"
+        href="https://github.com/wellywahyudi/nextjs-leaflet-starter"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex w-64 items-center justify-between rounded-full bg-white/70 pl-6 pr-2 py-2 text-sm font-semibold text-zinc-900 transition-colors hover:bg-white"

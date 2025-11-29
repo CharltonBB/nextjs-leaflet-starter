@@ -10,6 +10,7 @@ import {
   Locate,
   PencilRuler,
 } from "lucide-react";
+import { useGeolocation } from "@/hooks/useGeolocation";
 
 interface Country {
   id: string;
@@ -48,6 +49,7 @@ export function MapSearchBar({
   const [loading, setLoading] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
+  const { locateUser, isLocating, isAvailable } = useGeolocation();
   const searchInputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -157,6 +159,12 @@ export function MapSearchBar({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isExpanded]);
 
+  // Handle locate me functionality
+  const handleLocateMe = useCallback(() => {
+    locateUser();
+    setIsExpanded(false);
+  }, [locateUser]);
+
   const selectedCountryName = selectedCountry?.properties?.NAME || "";
   const hasSelection = !!selectedCountry;
 
@@ -223,7 +231,11 @@ export function MapSearchBar({
         )}
         <div className="ml-2 flex items-center gap-2 border-l border-gray-200 dark:border-gray-700 pl-3">
           <button
-            className="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded transition-all"
+            onClick={handleLocateMe}
+            disabled={!isAvailable || isLocating}
+            className={`text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded transition-all ${
+              isLocating ? "animate-pulse" : ""
+            } disabled:opacity-50 disabled:cursor-not-allowed`}
             aria-label="Show current location"
           >
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
@@ -314,16 +326,24 @@ export function MapSearchBar({
           {/* Locate Me Button */}
           {!loading && countries.length > 0 && (
             <div className="border-t border-gray-200 dark:border-gray-700 mt-2">
-              <button className="flex w-full items-center gap-3 px-4 py-3 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors group">
+              <button
+                onClick={handleLocateMe}
+                disabled={!isAvailable || isLocating}
+                className={`flex w-full items-center gap-3 px-4 py-3 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors group disabled:opacity-50 disabled:cursor-not-allowed ${
+                  isLocating ? "animate-pulse" : ""
+                }`}
+              >
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/50 group-hover:bg-blue-200 dark:group-hover:bg-blue-900/70 transition-colors">
                   <Locate className="h-4 w-4 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div className="flex-1 text-left">
                   <div className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                    Locate Me
+                    {isLocating ? "Locating..." : "Locate Me"}
                   </div>
                   <div className="text-xs text-gray-500 dark:text-gray-400">
-                    Find my current location
+                    {isLocating
+                      ? "Finding your location..."
+                      : "Find my current location"}
                   </div>
                 </div>
                 <ChevronRight className="h-5 w-5 text-blue-400 dark:text-blue-500" />
