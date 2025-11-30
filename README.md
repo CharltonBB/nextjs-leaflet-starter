@@ -12,6 +12,8 @@ A production-ready Next.js 16 starter template with vanilla Leaflet integration.
 
 ![Demo Screenshot](screenshot.png)
 
+📖 **Read the full story:** [I Built a Google Maps Clone Using Next.js 16 + Leaflet](https://dev.to/wellywahyudi/i-built-a-google-maps-clone-using-nextjs-16-leaflet-now-its-an-open-source-starter-kit-9n5)
+
 ## ✨ Features
 
 - **Modern Map Interface** — Google Maps-inspired UI with smooth animations
