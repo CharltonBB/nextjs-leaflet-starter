@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useContext, useCallback } from "react";
-import type { Map as LeafletMapInstance } from "leaflet";
+import type { Map as LeafletMapInstance, LeafletMouseEvent } from "leaflet";
 import { MapContext } from "@/contexts/MapContext";
 import { DEFAULT_MAP_CONFIG } from "@/constants/map-config";
 import type { LeafletMapProps } from "@/types/components";
@@ -36,6 +36,9 @@ export function LeafletMap({
   maxZoom = DEFAULT_MAP_CONFIG.maxZoom,
   className = "",
   children,
+  onClick,
+  onMouseMove,
+  cursorStyle = "grab",
 }: LeafletMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMapInstance | null>(null);
@@ -136,6 +139,38 @@ export function LeafletMap({
     };
   }, [minZoom, maxZoom, setMap, cleanupMap]);
 
+  // Handle click events - separate effect to allow updates
+  useEffect(() => {
+    if (!mapRef.current || !onClick) return;
+
+    const map = mapRef.current;
+    const handleClick = (e: LeafletMouseEvent) => {
+      onClick(e.latlng.lat, e.latlng.lng);
+    };
+
+    map.on("click", handleClick);
+
+    return () => {
+      map.off("click", handleClick);
+    };
+  }, [onClick]);
+
+  // Handle mouse move events for cursor tracking
+  useEffect(() => {
+    if (!mapRef.current || !onMouseMove) return;
+
+    const map = mapRef.current;
+    const handleMouseMove = (e: LeafletMouseEvent) => {
+      onMouseMove(e.latlng.lat, e.latlng.lng);
+    };
+
+    map.on("mousemove", handleMouseMove);
+
+    return () => {
+      map.off("mousemove", handleMouseMove);
+    };
+  }, [onMouseMove]);
+
   // Separate effect to handle view updates WITHOUT re-creating the map
   useEffect(() => {
     if (!mapRef.current) return;
@@ -152,6 +187,13 @@ export function LeafletMap({
       mapRef.current.setView(center, zoom, { animate: true });
     }
   }, [center, zoom]);
+
+  // Update cursor style when it changes
+  useEffect(() => {
+    if (!mapRef.current) return;
+    const container = mapRef.current.getContainer();
+    container.style.cursor = cursorStyle;
+  }, [cursorStyle]);
 
   return (
     <>

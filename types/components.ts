@@ -15,6 +15,9 @@ export interface LeafletMapProps {
   maxZoom?: number;
   className?: string;
   children?: ReactNode;
+  onClick?: (lat: number, lng: number) => void;
+  onMouseMove?: (lat: number, lng: number) => void;
+  cursorStyle?: string;
 }
 
 /**

@@ -39,3 +39,5 @@ export { MapThemeSwitcher } from './MapThemeSwitcher';
 export { MapUser } from './MapUser';
 export { MapMeasurementPanel } from './MapMeasurementPanel';
 export { MapDetailsPanel } from './MapDetailsPanel';
+export { MapContextMenu } from './MapContextMenu';
+export { MapPOIPanel } from './MapPOIPanel';
